@@ -1,13 +1,13 @@
 nota = int(input("Insira uma nota (0-100): "))
 
 match nota:
-    case n if 90 <= n <= 100:
+    case nota if 90 <= nota <= 100:
         print("Excelente")
-    case n if 70 <= n <= 89:
+    case nota if 70 <= nota <= 89:
         print("Bom")
-    case n if 50 <= n <= 69:
+    case nota if 50 <= nota <= 69:
         print("Suficiente")
-    case n if 0 <= n < 50:
+    case nota if 0 <= nota < 50:
         print("Insuficiente")
     case _:
         print("Nota inválida")
